@@ -1,0 +1,52 @@
+[
+  {
+    "name": "Mountain Peak Trail",
+    "description": "A challenging hike that takes you to the summit of a breathtaking mountain peak. Enjoy panoramic views of the surrounding landscape.",
+    "id": 0
+  },
+  {
+    "name": "River Valley Loop",
+    "description": "A peaceful hike along a meandering river through lush forests and serene meadows. Perfect for nature lovers and birdwatchers.",
+    "id": 1
+  },
+  {
+    "name": "Sunset Ridge Trail",
+    "description": "Experience stunning sunsets along this ridge trail that offers spectacular vistas and opportunities for photography.",
+    "id": 2
+  },
+  {
+    "name": "Wildflower Wonderland",
+    "description": "A springtime hike through fields of colorful wildflowers, with options for shorter or longer routes depending on your preference.",
+    "id": 3
+  },
+  {
+    "name": "Canyon Adventure",
+    "description": "Explore deep canyons and rocky terrain on this adventurous trail. Marvel at the geological formations and unique rock features.",
+    "id": 4
+  },
+  {
+    "name": "Coastal Cliff Trail",
+    "description": "Hike along the coastline, taking in the salty sea breeze and enjoying breathtaking views of the ocean from towering cliffs.",
+    "id": 5
+  },
+  {
+    "name": "Waterfall Wonderland",
+    "description": "Discover a series of stunning waterfalls cascading down lush hillsides as you hike through this enchanting forest trail.",
+    "id": 6
+  },
+  {
+    "name": "Alpine Lake Expedition",
+    "description": "Embark on a challenging hike to a remote alpine lake nestled high in the mountains. Pristine waters and serene surroundings await.",
+    "id": 7
+  },
+  {
+    "name": "Historic Ruins Trail",
+    "description": "Combine hiking with history as you explore ancient ruins and archaeological sites along this trail that takes you back in time.",
+    "id": 8
+  },
+  {
+    "name": "Meadowview Path",
+    "description": "Stroll through open meadows filled with wildflowers, with options for picnicking and wildlife spotting along the way.",
+    "id": 9
+  }
+]
