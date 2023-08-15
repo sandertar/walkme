@@ -20,6 +20,5 @@ module.exports = {
     '@typescript-eslint/explicit-function-return-type': 'warn',
     '@typescript-eslint/no-non-null-assertion': 'error',
     '@typescript-eslint/no-empty-function': 'off',
-    'react/react-in-jsx-scope': 'off',
   },
 };

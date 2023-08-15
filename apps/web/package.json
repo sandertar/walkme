@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "format": "prettier --write \"**/*.{ts,tsx}\""
   },
   "dependencies": {
     "next": "^13.4.1",
@@ -18,7 +19,14 @@
     "@types/node": "^17.0.12",
     "@types/react": "^18.0.22",
     "@types/react-dom": "^18.0.7",
+    "@typescript-eslint/eslint-plugin": "^6.4.0",
+    "@typescript-eslint/parser": "^6.4.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-airbnb-typescript": "^17.1.0",
     "eslint-config-custom": "workspace:*",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "prettier": "^3.0.1",
     "tsconfig": "workspace:*",
     "typescript": "^4.5.3"
   }
