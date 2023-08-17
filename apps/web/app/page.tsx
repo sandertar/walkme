@@ -1,10 +1,12 @@
-import { Button } from 'ui';
+import Link from 'next/link';
 
-export default function Page() {
+export default function Page(): JSX.Element {
   return (
     <>
-      <Button variant="contained">test</Button>
-      <div data-testid="heading">hello world</div>
+      <p data-testid="heading">{process.env.API_PORT}</p>
+      <Link href="/client">client page</Link>
+      <br />
+      <Link href="/server">server page</Link>
     </>
   );
 }

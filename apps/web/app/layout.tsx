@@ -1,11 +1,13 @@
-import { ThemeRegistry } from 'ui';
+import 'ui/styles.css';
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export const metadata = {
+  title: 'walkme.sk',
+};
+
+export default function RootLayout({ children }: { children: React.ReactNode }): JSX.Element {
   return (
     <html lang="en">
-      <body>
-        <ThemeRegistry options={{ key: 'mui' }}>{children}</ThemeRegistry>
-      </body>
+      <body>{children}</body>
     </html>
   );
 }
