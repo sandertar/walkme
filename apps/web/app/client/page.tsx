@@ -10,6 +10,8 @@ export default function Page(): JSX.Element {
       <p>{process.env.NEXT_PUBLIC_API_PORT}</p>
       <p className="text-brandblue">{count}</p>
       <Button
+        variant={Button.variant.PRIMARY}
+        size={Button.size.SMALL}
         onClick={(): void => {
           setCount((v) => v + 1);
         }}

@@ -43,11 +43,5 @@ export const Button = (props: Props) => {
   );
 };
 
-Button.defaultProps = {
-  variant: ButtonVariant.SECONDARY,
-  size: ButtonSize.SMALL,
-  onClick: () => undefined,
-};
-
 Button.variant = ButtonVariant;
 Button.size = ButtonSize;
