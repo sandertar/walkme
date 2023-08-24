@@ -23,12 +23,14 @@ type Story = StoryObj<typeof meta>;
 export const Primary: Story = {
   args: {
     variant: Button.variant.PRIMARY,
+    uiSize: Button.size.MEDIUM,
     children: 'Button',
   },
 };
 
 export const Secondary: Story = {
   args: {
+    uiSize: Button.size.MEDIUM,
     variant: Button.variant.SECONDARY,
     children: 'Button',
   },
@@ -36,6 +38,7 @@ export const Secondary: Story = {
 
 export const Error: Story = {
   args: {
+    uiSize: Button.size.MEDIUM,
     variant: Button.variant.ERROR,
     children: 'Button',
   },
@@ -43,21 +46,22 @@ export const Error: Story = {
 
 export const Success: Story = {
   args: {
+    uiSize: Button.size.MEDIUM,
     variant: Button.variant.SUCCESS,
     children: 'Button',
   },
 };
 
-export const Large: Story = {
+export const MEDIUM: Story = {
   args: {
-    size: 'large',
+    uiSize: Button.size.MEDIUM,
     children: 'Button',
   },
 };
 
 export const Small: Story = {
   args: {
-    size: 'small',
+    uiSize: Button.size.SMALL,
     children: 'Button',
   },
 };

@@ -81,9 +81,6 @@ importers:
       slugify:
         specifier: ^1.6.6
         version: 1.6.6
-      types:
-        specifier: workspace:^
-        version: link:../../packages/types
       validator:
         specifier: ^13.11.0
         version: 13.11.0
@@ -130,6 +127,9 @@ importers:
       tsconfig:
         specifier: workspace:*
         version: link:../../packages/tsconfig
+      types:
+        specifier: workspace:^
+        version: link:../../packages/types
       typescript:
         specifier: ^5.1.6
         version: 5.1.6
@@ -206,6 +206,9 @@ importers:
 
   apps/web:
     dependencies:
+      keen-slider:
+        specifier: ^6.8.6
+        version: 6.8.6
       next:
         specifier: ^13.4.1
         version: 13.4.1(@babel/core@7.22.10)(react-dom@18.2.0)(react@18.2.0)
@@ -215,6 +218,12 @@ importers:
       react-dom:
         specifier: ^18.2.0
         version: 18.2.0(react@18.2.0)
+      react-icons:
+        specifier: ^4.10.1
+        version: 4.10.1(react@18.2.0)
+      types:
+        specifier: workspace:^
+        version: link:../../packages/types
       ui:
         specifier: workspace:*
         version: link:../../packages/ui
@@ -288,9 +297,6 @@ importers:
       tsconfig:
         specifier: workspace:*
         version: link:../../packages/tsconfig
-      types:
-        specifier: workspace:^
-        version: link:../../packages/types
       typescript:
         specifier: ^4.5.3
         version: 4.9.5
@@ -7567,8 +7573,8 @@ packages:
       eslint: ^7.32.0 || ^8.2.0
       eslint-plugin-import: ^2.25.3
     dependencies:
-      '@typescript-eslint/eslint-plugin': 6.4.0(@typescript-eslint/parser@6.4.0)(eslint@8.47.0)(typescript@5.1.6)
-      '@typescript-eslint/parser': 6.4.0(eslint@8.47.0)(typescript@5.1.6)
+      '@typescript-eslint/eslint-plugin': 6.4.0(@typescript-eslint/parser@6.4.0)(eslint@8.47.0)(typescript@4.9.5)
+      '@typescript-eslint/parser': 6.4.0(eslint@8.47.0)(typescript@4.9.5)
       eslint: 8.47.0
       eslint-config-airbnb-base: 15.0.0(eslint-plugin-import@2.27.5)(eslint@8.47.0)
       eslint-plugin-import: 2.27.5(@typescript-eslint/parser@6.4.0)(eslint@8.47.0)
@@ -7739,7 +7745,7 @@ packages:
       eslint-import-resolver-webpack:
         optional: true
     dependencies:
-      '@typescript-eslint/parser': 6.4.0(eslint@8.47.0)(typescript@5.1.6)
+      '@typescript-eslint/parser': 6.4.0(eslint@8.47.0)(typescript@4.9.5)
       debug: 3.2.7
       eslint: 8.47.0
       eslint-import-resolver-node: 0.3.7
@@ -7785,7 +7791,7 @@ packages:
       '@typescript-eslint/parser':
         optional: true
     dependencies:
-      '@typescript-eslint/parser': 6.4.0(eslint@8.47.0)(typescript@5.1.6)
+      '@typescript-eslint/parser': 6.4.0(eslint@8.47.0)(typescript@4.9.5)
       array-includes: 3.1.6
       array.prototype.flat: 1.3.1
       array.prototype.flatmap: 1.3.1
@@ -10258,6 +10264,10 @@ packages:
     engines: {node: '>=12.0.0'}
     dev: false
 
+  /keen-slider@6.8.6:
+    resolution: {integrity: sha512-dcEQ7GDBpCjUQA8XZeWh3oBBLLmyn8aoeIQFGL/NTVkoEOsmlnXqA4QykUm/SncolAZYGsEk/PfUhLZ7mwMM2w==}
+    dev: false
+
   /kind-of@6.0.3:
     resolution: {integrity: sha512-dcS1ul+9tmeD95T+x28/ehLgd9mENa3LsvDTtzm3vyBEO7RPptvAD+t44WVXaUjTBRcrpFeFlC8WCruUR456hw==}
     engines: {node: '>=0.10.0'}
@@ -12088,6 +12098,14 @@ packages:
       react-dom: 18.2.0(react@18.2.0)
       react-is: 18.1.0
     dev: true
+
+  /react-icons@4.10.1(react@18.2.0):
+    resolution: {integrity: sha512-/ngzDP/77tlCfqthiiGNZeYFACw85fUjZtLbedmJ5DTlNDIwETxhwBzdOJ21zj4iJdvc0J3y7yOsX3PpxAJzrw==}
+    peerDependencies:
+      react: '*'
+    dependencies:
+      react: 18.2.0
+    dev: false
 
   /react-inspector@6.0.2(react@18.2.0):
     resolution: {integrity: sha512-x+b7LxhmHXjHoU/VrFAzw5iutsILRoYyDq97EDYdFpPLcvqtEzk4ZSZSQjnFPbr5T57tLXnHcqFYoN1pI6u8uQ==}

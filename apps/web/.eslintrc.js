@@ -21,5 +21,7 @@ module.exports = {
     '@typescript-eslint/no-non-null-assertion': 'error',
     '@typescript-eslint/no-empty-function': 'off',
     'react/react-in-jsx-scope': 'off',
+    'react/require-default-props': 'off',
+    'import/prefer-default-export': 'off',
   },
 };

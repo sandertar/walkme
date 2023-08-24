@@ -12,9 +12,12 @@
     "test:ci": "jest --ci"
   },
   "dependencies": {
+    "keen-slider": "^6.8.6",
     "next": "^13.4.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-icons": "^4.10.1",
+    "types": "workspace:^",
     "ui": "workspace:*"
   },
   "devDependencies": {
@@ -41,7 +44,6 @@
     "tailwind-config": "workspace:^",
     "tailwindcss": "^3.2.4",
     "tsconfig": "workspace:*",
-    "types": "workspace:^",
     "typescript": "^4.5.3"
   }
 }

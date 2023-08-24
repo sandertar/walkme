@@ -8,8 +8,8 @@ const port = 8080;
 
 const trails: Trail[] = JSON.parse(fs.readFileSync(`${__dirname}/dev-data/data.json`).toString());
 
-app.get('/api/v1/tours/:id', (req: Request, res: Response) => {
-  const trail = trails.find((t) => t.id === parseInt(req.params.id, 10));
+app.get('/api/v1/tours/:slug', (req: Request, res: Response) => {
+  const trail = trails.find((t) => t.slug === req.params.slug);
   res.status(200).json(trail);
 });
 
