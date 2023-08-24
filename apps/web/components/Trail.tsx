@@ -1,6 +1,6 @@
 import Image, { StaticImageData } from 'next/image';
 import Link from 'next/link';
-import { BiMap } from 'react-icons/bi';
+import { BsGeoAlt } from 'react-icons/bs';
 import { Button } from 'ui';
 
 interface Props {
@@ -36,7 +36,7 @@ export function Trail({ width, height, alt, src, url, title, location }: Props):
           </div>
           <p className="font-accent text-2xl text-center text-white mb-3">{title}</p>
           <p className="text-white">
-            <BiMap className="inline ui-text-primary" /> {location}
+            <BsGeoAlt className="inline ui-text-primary" /> {location}
           </p>
         </div>
       </div>

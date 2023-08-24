@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { useCallback, useState } from 'react';
-import { BiX, BiMenu, BiDirections, BiInfoCircle, BiLogIn, BiUser } from 'react-icons/bi';
+import { BsXLg, BsList, BsBoxArrowInRight, BsSignpostSplit, BsPerson, BsInfoCircle } from 'react-icons/bs';
 
 import ROUTES from '../routes';
 
@@ -27,7 +27,7 @@ export function Header({ isHomePage }: Props): JSX.Element {
         <Logo light={isHomePage} />
       </Link>
       <button className="md:hidden text-2xl text-white" type="button" onClick={toggleMenu}>
-        <BiMenu />
+        <BsList />
       </button>
       <nav className="hidden md:inline-flex whitespace-nowrap text-white">
         <Link className={linkClasses} href={ROUTES.trails}>
@@ -41,8 +41,8 @@ export function Header({ isHomePage }: Props): JSX.Element {
             Account
           </Link>
         ) : (
-          <Link className={linkClasses} href={ROUTES.signin}>
-            Sign in
+          <Link className={`flex space-x-3 items-center ${linkClasses}`} href={ROUTES.signin}>
+            <span>Sign in</span> <BsBoxArrowInRight />
           </Link>
         )}
       </nav>
@@ -58,7 +58,7 @@ export function Header({ isHomePage }: Props): JSX.Element {
         >
           <div className="text-right px-5 py-6">
             <button className="text-2xl" type="button" onClick={toggleMenu}>
-              <BiX />
+              <BsXLg />
             </button>
           </div>
           <div className="flex justify-center py-10 border-b border-slate-200 mb-10">
@@ -68,18 +68,18 @@ export function Header({ isHomePage }: Props): JSX.Element {
           </div>
           <nav className="text-xl">
             <Link className={linkClassesMobile} href={ROUTES.trails}>
-              <span>Trails</span> <BiDirections className="ui-text-primary" />
+              <span>Trails</span> <BsSignpostSplit className="ui-text-primary" />
             </Link>
             <Link className={linkClassesMobile} href={ROUTES.about}>
-              <span>About</span> <BiInfoCircle className="ui-text-primary" />
+              <span>About</span> <BsInfoCircle className="ui-text-primary" />
             </Link>
             {isAuthenticated ? (
               <Link className={linkClassesMobile} href={ROUTES.account}>
-                <span>Account</span> <BiUser className="ui-text-primary" />
+                <span>Account</span> <BsPerson className="ui-text-primary" />
               </Link>
             ) : (
               <Link className={linkClassesMobile} href={ROUTES.signin}>
-                <span>Sign in</span> <BiLogIn className="ui-text-primary" />
+                <span>Sign in</span> <BsBoxArrowInRight className="ui-text-primary" />
               </Link>
             )}
           </nav>
