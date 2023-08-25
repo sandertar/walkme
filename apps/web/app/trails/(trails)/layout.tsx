@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 
-import { Footer, Header } from '../../components';
+import { Footer, Header } from '../../../components';
 
 export const metadata: Metadata = {
   title: 'walkme.sk Trails',
@@ -27,5 +27,3 @@ export default function TrailsLayout({ list, map }: Props): JSX.Element {
     </div>
   );
 }
-
-// grid grid-rows-3 grid-flow-col gap-4

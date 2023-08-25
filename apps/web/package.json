@@ -21,7 +21,8 @@
     "react-icons": "^4.10.1",
     "react-leaflet": "^4.2.1",
     "types": "workspace:^",
-    "ui": "workspace:*"
+    "ui": "workspace:*",
+    "zustand": "^4.4.1"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^6.0.0",
