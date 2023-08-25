@@ -1,11 +1,11 @@
 import { Button } from 'ui';
 
-import { Section } from '../../components';
-import { getTrails } from '../../services/trails';
-
 import Badges from './badges';
 import Hero from './hero';
 import Slider from './slider';
+
+import { Section } from '@components';
+import { getTrails } from '@services/trails';
 
 export default async function Page(): Promise<JSX.Element> {
   const trails = await getTrails();

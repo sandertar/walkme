@@ -5,7 +5,7 @@ import iconData from 'leaflet/dist/images/marker-icon.png';
 import { MapContainer, TileLayer, Marker, Popup, LayerGroup, useMapEvents } from 'react-leaflet';
 import { Trail } from 'types';
 
-import { useMapBounds } from '../../../../lib/state/useMapBounds';
+import { useMapBounds } from '@lib/state';
 
 const icon = new Icon({
   iconUrl: iconData.src,
@@ -36,7 +36,7 @@ export default function Map({ points = [] }: Props): JSX.Element {
       <MapController />
       <TileLayer
         attribution='<a href="https://api.mapy.cz/copyright">Seznam.cz a.s. and others</a>'
-        url="https://api.mapy.cz/v1/maptiles/outdoor/256/{z}/{x}/{y}?apikey=0eRFg_TDMhO8IM-m-8C9gssx6WgREZwwnknLdKw3iqQ"
+        url={`https://api.mapy.cz/v1/maptiles/outdoor/256/{z}/{x}/{y}?apikey=${process.env.NEXT_PUBLIC_MAPS_API_KEY}`}
       />
       <LayerGroup>
         {points.map((point) => (

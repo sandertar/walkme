@@ -1,7 +1,7 @@
 import 'ui/styles.css';
 import 'keen-slider/keen-slider.min.css';
 import 'leaflet/dist/leaflet.css';
-import '../styles/globals.css';
+import '@styles/globals.css';
 
 import { Open_Sans, Libre_Baskerville } from 'next/font/google';
 import Head from 'next/head';

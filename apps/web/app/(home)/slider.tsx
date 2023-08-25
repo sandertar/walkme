@@ -3,7 +3,7 @@
 import { useKeenSlider } from 'keen-slider/react';
 import { Trail } from 'types';
 
-import { TrailCard } from '../../components';
+import { TrailCard } from '@components';
 
 interface Props {
   trails: Trail[];
@@ -60,7 +60,7 @@ export default function Slider({ trails }: Props): JSX.Element {
   return (
     <div ref={sliderRef} className="keen-slider">
       {trails.map((trail) => (
-        <div className="keen-slider__slide">
+        <div key={trail.slug} className="keen-slider__slide">
           <TrailCard width={200} height={200} trail={trail} />
         </div>
       ))}
