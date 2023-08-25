@@ -1,11 +1,15 @@
 import { render, screen } from '@testing-library/react';
 import Home from '../app/(home)/page';
 
-describe('Home', () => {
-  it('renders a heading', () => {
-    render(<Home />);
+jest.mock('../services/trails', () => ({
+  getTrails: () => Promise.resolve([]),
+}));
 
-    const heading = screen.getByTestId('heading');
+describe('Home', () => {
+  it('renders a heading', async () => {
+    render(await Home());
+
+    const heading = await screen.getByTestId('heading');
 
     expect(heading).toBeInTheDocument();
   });

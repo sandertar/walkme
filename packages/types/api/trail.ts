@@ -3,4 +3,8 @@ export interface Trail {
   description: string;
   slug: string;
   id: number;
+  coordinates: [number, number];
+  region: string;
+  rating: number;
+  photos: string[];
 }

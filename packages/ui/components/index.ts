@@ -1,4 +1,3 @@
 // component exports
-export * from './Button';
-export * from './Header';
-export * from './Input';
+export { Button } from './Button';
+export { Input } from './Input';

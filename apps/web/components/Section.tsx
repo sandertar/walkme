@@ -4,7 +4,7 @@ interface Props {
   titleCentered?: boolean;
 }
 
-export default function Section({ title, children, titleCentered }: Props): JSX.Element {
+export function Section({ title, children, titleCentered }: Props): JSX.Element {
   return (
     <section className="py-14">
       <div className="ui-container">

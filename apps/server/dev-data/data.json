@@ -1,62 +1,418 @@
 [
   {
-    "name": "Mountain Peak Trail",
-    "description": "A challenging hike that takes you to the summit of a breathtaking mountain peak. Enjoy panoramic views of the surrounding landscape.",
+    "name": "Velické Pleso Lake",
+    "description": "Enjoy a serene hike to Velické Pleso Lake, nestled in the High Tatras. Experience pristine alpine beauty and reflections of towering peaks.",
     "id": 0,
-    "slug": "mountain-peak-trail"
+    "slug": "velicke-pleso-lake",
+    "coordinates": [49.168919, 20.147555],
+    "region": "Prešov",
+    "rating": 4.77,
+    "photos": [
+      "https://picsum.photos/200",
+      "https://picsum.photos/200",
+      "https://picsum.photos/200",
+      "https://picsum.photos/200",
+      "https://picsum.photos/200"
+    ]
   },
   {
-    "name": "River Valley Loop",
-    "description": "A peaceful hike along a meandering river through lush forests and serene meadows. Perfect for nature lovers and birdwatchers.",
+    "name": "Gerlachovský Peak",
+    "description": "Conquer Gerlachovský Peak, the highest point in the Carpathians. Revel in breathtaking vistas and the sense of accomplishment.",
     "id": 1,
-    "slug": "river-valley-loop"
+    "slug": "gerlachovsky-peak",
+    "coordinates": [49.164955, 20.107198],
+    "region": "Prešov",
+    "rating": 3.96,
+    "photos": [
+      "https://picsum.photos/200",
+      "https://picsum.photos/200",
+      "https://picsum.photos/200",
+      "https://picsum.photos/200",
+      "https://picsum.photos/200"
+    ]
   },
   {
-    "name": "Sunset Ridge Trail",
-    "description": "Experience stunning sunsets along this ridge trail that offers spectacular vistas and opportunities for photography.",
+    "name": "Dobšinská Ice Cave",
+    "description": "Step into the icy wonders of Dobšinská Ice Cave. Admire the natural ice sculptures and learn about this geological marvel.",
     "id": 2,
-    "slug": "sunset-ridge-trail"
+    "slug": "dobsinska-ice-cave",
+    "coordinates": [48.891352, 20.289275],
+    "region": "Košice",
+    "rating": 4.63,
+    "photos": [
+      "https://picsum.photos/200",
+      "https://picsum.photos/200",
+      "https://picsum.photos/200",
+      "https://picsum.photos/200",
+      "https://picsum.photos/200"
+    ]
   },
   {
-    "name": "Wildflower Wonderland",
-    "description": "A springtime hike through fields of colorful wildflowers, with options for shorter or longer routes depending on your preference.",
+    "name": "Červený Kameň Castle",
+    "description": "Explore Červený Kameň Castle's rich history and exquisite interiors. Wander through its beautiful gardens and enjoy captivating views.",
     "id": 3,
-    "slug": "wildflower-wonderland"
+    "slug": "cerveny-kamen-castle",
+    "coordinates": [48.389524, 17.408029],
+    "region": "Bratislava",
+    "rating": 4.1,
+    "photos": [
+      "https://picsum.photos/200",
+      "https://picsum.photos/200",
+      "https://picsum.photos/200",
+      "https://picsum.photos/200",
+      "https://picsum.photos/200"
+    ]
   },
   {
-    "name": "Canyon Adventure",
-    "description": "Explore deep canyons and rocky terrain on this adventurous trail. Marvel at the geological formations and unique rock features.",
+    "name": "Klak Waterfall",
+    "description": "Discover Klak Waterfall's hidden beauty deep within the forests. Hike to this picturesque cascade and enjoy its peaceful surroundings.",
     "id": 4,
-    "slug": "canyon-adventure"
+    "slug": "klak-waterfall",
+    "coordinates": [48.755926, 19.107951],
+    "region": "Banská Bystrica",
+    "rating": 4.61,
+    "photos": [
+      "https://picsum.photos/200",
+      "https://picsum.photos/200",
+      "https://picsum.photos/200",
+      "https://picsum.photos/200",
+      "https://picsum.photos/200"
+    ]
   },
   {
-    "name": "Coastal Cliff Trail",
-    "description": "Hike along the coastline, taking in the salty sea breeze and enjoying breathtaking views of the ocean from towering cliffs.",
+    "name": "Slovak Paradise National Park",
+    "description": "Embark on an adventure in Slovak Paradise National Park. Traverse through stunning gorges, cross wooden bridges, and enjoy waterfalls.",
     "id": 5,
-    "slug": "coastal-cliff-trail"
+    "slug": "slovak-paradise-national-park",
+    "coordinates": [48.929378, 20.392006],
+    "region": "Košice",
+    "rating": 4.33,
+    "photos": [
+      "https://picsum.photos/200",
+      "https://picsum.photos/200",
+      "https://picsum.photos/200",
+      "https://picsum.photos/200",
+      "https://picsum.photos/200"
+    ]
   },
   {
-    "name": "Waterfall Wonderland",
-    "description": "Discover a series of stunning waterfalls cascading down lush hillsides as you hike through this enchanting forest trail.",
+    "name": "Jasenská Valley",
+    "description": "Hike through Jasenská Valley's lush meadows and tranquil forests. Immerse yourself in nature and enjoy the beauty of its babbling streams.",
     "id": 6,
-    "slug": "waterfall-wonderland"
+    "slug": "jasenska-valley",
+    "coordinates": [48.849383, 19.643831],
+    "region": "Banská Bystrica",
+    "rating": 4.44,
+    "photos": [
+      "https://picsum.photos/200",
+      "https://picsum.photos/200",
+      "https://picsum.photos/200",
+      "https://picsum.photos/200",
+      "https://picsum.photos/200"
+    ]
   },
   {
-    "name": "Alpine Lake Expedition",
-    "description": "Embark on a challenging hike to a remote alpine lake nestled high in the mountains. Pristine waters and serene surroundings await.",
+    "name": "Sulov Rocks",
+    "description": "Experience the unique rock formations of Sulov Rocks. Hike through a maze of impressive sandstone pillars and enjoy panoramic views.",
     "id": 7,
-    "slug": "alpine-lake-expedition"
+    "slug": "sulov-rocks",
+    "coordinates": [49.236408, 18.284949],
+    "region": "Trenčín",
+    "rating": 4.75,
+    "photos": [
+      "https://picsum.photos/200",
+      "https://picsum.photos/200",
+      "https://picsum.photos/200",
+      "https://picsum.photos/200",
+      "https://picsum.photos/200"
+    ]
   },
   {
-    "name": "Historic Ruins Trail",
-    "description": "Combine hiking with history as you explore ancient ruins and archaeological sites along this trail that takes you back in time.",
+    "name": "Čingov",
+    "description": "Explore the Čingov area in Slovak Paradise. Hike along trails that lead to stunning viewpoints, rocky formations, and hidden waterfalls.",
     "id": 8,
-    "slug": "historic-ruins-trail"
+    "slug": "cingov",
+    "coordinates": [48.896828, 20.46311],
+    "region": "Košice",
+    "rating": 4.17,
+    "photos": [
+      "https://picsum.photos/200",
+      "https://picsum.photos/200",
+      "https://picsum.photos/200",
+      "https://picsum.photos/200",
+      "https://picsum.photos/200"
+    ]
   },
   {
-    "name": "Meadowview Path",
-    "description": "Stroll through open meadows filled with wildflowers, with options for picnicking and wildlife spotting along the way.",
+    "name": "Strbske Pleso Lake",
+    "description": "Visit Strbske Pleso, a glacial mountain lake in the High Tatras. Enjoy a leisurely walk around the lake and take in the majestic scenery.",
     "id": 9,
-    "slug": "meadowview-path"
+    "slug": "strbske-pleso-lake",
+    "coordinates": [49.115918, 20.060699],
+    "region": "Prešov",
+    "rating": 3.82,
+    "photos": [
+      "https://picsum.photos/200",
+      "https://picsum.photos/200",
+      "https://picsum.photos/200",
+      "https://picsum.photos/200",
+      "https://picsum.photos/200"
+    ]
+  },
+  {
+    "name": "Skalnate Pleso",
+    "description": "Take a cable car to Skalnate Pleso, a popular vantage point in the High Tatras. Enjoy panoramic views, hiking trails, and local wildlife.",
+    "id": 10,
+    "slug": "skalnate-pleso",
+    "coordinates": [49.179867, 20.244013],
+    "region": "Prešov",
+    "rating": 4.68,
+    "photos": [
+      "https://picsum.photos/200",
+      "https://picsum.photos/200",
+      "https://picsum.photos/200",
+      "https://picsum.photos/200",
+      "https://picsum.photos/200"
+    ]
+  },
+  {
+    "name": "Rohace",
+    "description": "Explore the beautiful Rohace mountain range. Hike through valleys, traverse ridges, and be rewarded with breathtaking alpine vistas.",
+    "id": 11,
+    "slug": "rohace",
+    "coordinates": [49.225341, 19.746418],
+    "region": "Žilina",
+    "rating": 4.85,
+    "photos": [
+      "https://picsum.photos/200",
+      "https://picsum.photos/200",
+      "https://picsum.photos/200",
+      "https://picsum.photos/200",
+      "https://picsum.photos/200"
+    ]
+  },
+  {
+    "name": "Tomášovský Viewpoint",
+    "description": "Hike to Tomášovský Viewpoint for sweeping vistas of the High Tatras. Marvel at the peaks, valleys, and the beauty of the Tatran landscape.",
+    "id": 12,
+    "slug": "tomasovsky-viewpoint",
+    "coordinates": [49.193358, 20.161003],
+    "region": "Prešov",
+    "rating": 4.06,
+    "photos": [
+      "https://picsum.photos/200",
+      "https://picsum.photos/200",
+      "https://picsum.photos/200",
+      "https://picsum.photos/200",
+      "https://picsum.photos/200"
+    ]
+  },
+  {
+    "name": "Harmanecká Cave",
+    "description": "Explore the intricate underground formations of Harmanecká Cave. Take a guided tour through its chambers adorned with stunning stalactites.",
+    "id": 13,
+    "slug": "harmanecka-cave",
+    "coordinates": [49.137925, 19.483832],
+    "region": "Žilina",
+    "rating": 4.27,
+    "photos": [
+      "https://picsum.photos/200",
+      "https://picsum.photos/200",
+      "https://picsum.photos/200",
+      "https://picsum.photos/200",
+      "https://picsum.photos/200"
+    ]
+  },
+  {
+    "name": "Kysel",
+    "description": "Experience the beauty of Kysel's nature reserve. Hike along trails that wind through forests, past meadows, and offer picturesque views.",
+    "id": 14,
+    "slug": "kysel",
+    "coordinates": [48.795049, 20.398489],
+    "region": "Košice",
+    "rating": 4.48,
+    "photos": [
+      "https://picsum.photos/200",
+      "https://picsum.photos/200",
+      "https://picsum.photos/200",
+      "https://picsum.photos/200",
+      "https://picsum.photos/200"
+    ]
+  },
+  {
+    "name": "Sokolia Valley",
+    "description": "Discover the enchanting Sokolia Valley. Hike through dense forests, cross wooden bridges, and encounter the beauty of the Sokolia Waterfall.",
+    "id": 15,
+    "slug": "sokolia-valley",
+    "coordinates": [48.868487, 19.507309],
+    "region": "Banská Bystrica",
+    "rating": 4.99,
+    "photos": [
+      "https://picsum.photos/200",
+      "https://picsum.photos/200",
+      "https://picsum.photos/200",
+      "https://picsum.photos/200",
+      "https://picsum.photos/200"
+    ]
+  },
+  {
+    "name": "Zelené Pleso Lake",
+    "description": "Admire the beauty of Zelené Pleso Lake, nestled in the High Tatras. Hike to this glacial lake and enjoy reflections of rugged peaks.",
+    "id": 16,
+    "slug": "zelene-pleso-lake",
+    "coordinates": [49.179531, 20.159917],
+    "region": "Prešov",
+    "rating": 4.73,
+    "photos": [
+      "https://picsum.photos/200",
+      "https://picsum.photos/200",
+      "https://picsum.photos/200",
+      "https://picsum.photos/200",
+      "https://picsum.photos/200"
+    ]
+  },
+  {
+    "name": "Súľov Rocks National Nature Reserve",
+    "description": "Discover the impressive rock formations of Súľov Rocks. Hike through its diverse landscapes and marvel at the interplay of nature and geology.",
+    "id": 17,
+    "slug": "sulov-rocks-national-nature-reserve",
+    "coordinates": [49.236102, 18.288746],
+    "region": "Trenčín",
+    "rating": 4.12,
+    "photos": [
+      "https://picsum.photos/200",
+      "https://picsum.photos/200",
+      "https://picsum.photos/200",
+      "https://picsum.photos/200",
+      "https://picsum.photos/200"
+    ]
+  },
+  {
+    "name": "Horný Smokovec",
+    "description": "Experience the beauty of Horný Smokovec in the High Tatras. Hike amidst alpine scenery, breathe in the fresh air, and enjoy stunning views.",
+    "id": 18,
+    "slug": "horny-smokovec",
+    "coordinates": [49.150936, 20.213931],
+    "region": "Prešov",
+    "rating": 4.64,
+    "photos": [
+      "https://picsum.photos/200",
+      "https://picsum.photos/200",
+      "https://picsum.photos/200",
+      "https://picsum.photos/200",
+      "https://picsum.photos/200"
+    ]
+  },
+  {
+    "name": "Harmanec",
+    "description": "Visit Harmanec's well-known cave system. Explore its underground passages, admire the intricate formations, and learn about its geology.",
+    "id": 19,
+    "slug": "harmanec",
+    "coordinates": [48.993431, 19.417781],
+    "region": "Banská Bystrica",
+    "rating": 3.89,
+    "photos": [
+      "https://picsum.photos/200",
+      "https://picsum.photos/200",
+      "https://picsum.photos/200",
+      "https://picsum.photos/200",
+      "https://picsum.photos/200"
+    ]
+  },
+  {
+    "name": "Zbojnícka Valley",
+    "description": "Hike through the stunning Zbojnícka Valley. Experience the beauty of alpine landscapes, meadows, and breathtaking views of the High Tatras.",
+    "id": 20,
+    "slug": "zbojnicksa-valley",
+    "coordinates": [49.14943, 20.129432],
+    "region": "Prešov",
+    "rating": 4.83,
+    "photos": [
+      "https://picsum.photos/200",
+      "https://picsum.photos/200",
+      "https://picsum.photos/200",
+      "https://picsum.photos/200",
+      "https://picsum.photos/200"
+    ]
+  },
+  {
+    "name": "Geravy Waterfall",
+    "description": "Discover the hidden gem of Geravy Waterfall. Hike through lush forests to this picturesque cascade and enjoy the tranquility of nature.",
+    "id": 21,
+    "slug": "geravy-waterfall",
+    "coordinates": [48.796874, 19.02512],
+    "region": "Banská Bystrica",
+    "rating": 4.11,
+    "photos": [
+      "https://picsum.photos/200",
+      "https://picsum.photos/200",
+      "https://picsum.photos/200",
+      "https://picsum.photos/200",
+      "https://picsum.photos/200"
+    ]
+  },
+  {
+    "name": "Kvačianska Valley",
+    "description": "Explore the picturesque Kvačianska Valley. Hike along its trails, pass by charming wooden cabins, and enjoy the soothing sound of streams.",
+    "id": 22,
+    "slug": "kvacianska-valley",
+    "coordinates": [49.202178, 19.621814],
+    "region": "Žilina",
+    "rating": 4.0,
+    "photos": [
+      "https://picsum.photos/200",
+      "https://picsum.photos/200",
+      "https://picsum.photos/200",
+      "https://picsum.photos/200",
+      "https://picsum.photos/200"
+    ]
+  },
+  {
+    "name": "Donovaly",
+    "description": "Discover Donovaly's hiking trails amidst rolling hills. Enjoy breathtaking views, explore the area's unique rock formations, and enjoy nature.",
+    "id": 23,
+    "slug": "donovaly",
+    "coordinates": [48.883408, 19.316768],
+    "region": "Banská Bystrica",
+    "rating": 4.56,
+    "photos": [
+      "https://picsum.photos/200",
+      "https://picsum.photos/200",
+      "https://picsum.photos/200",
+      "https://picsum.photos/200",
+      "https://picsum.photos/200"
+    ]
+  },
+  {
+    "name": "Čertovica",
+    "description": "Hike to Čertovica for stunning views of the Low Tatras and surrounding valleys. Enjoy the mountain air and the sense of adventure.",
+    "id": 24,
+    "slug": "certovica",
+    "coordinates": [48.927955, 19.566841],
+    "region": "Banská Bystrica",
+    "rating": 4.22,
+    "photos": [
+      "https://picsum.photos/200",
+      "https://picsum.photos/200",
+      "https://picsum.photos/200",
+      "https://picsum.photos/200",
+      "https://picsum.photos/200"
+    ]
+  },
+  {
+    "name": "Muráň Castle",
+    "description": "Explore the captivating ruins of Muráň Castle. Hike to this historic site, surrounded by scenic landscapes, and uncover its intriguing history.",
+    "id": 25,
+    "slug": "muran-castle",
+    "coordinates": [48.785218, 20.148603],
+    "region": "Banská Bystrica",
+    "rating": 4.55,
+    "photos": [
+      "https://picsum.photos/200",
+      "https://picsum.photos/200",
+      "https://picsum.photos/200",
+      "https://picsum.photos/200",
+      "https://picsum.photos/200"
+    ]
   }
 ]

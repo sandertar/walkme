@@ -1,20 +1,24 @@
 'use client';
 
 import { useKeenSlider } from 'keen-slider/react';
+import { Trail } from 'types';
 
-import hero from '../../assets/images/hero1.jpeg';
-import { Trail } from '../../components';
+import { TrailCard } from '../../components';
 
-export default function Slider(): JSX.Element {
+interface Props {
+  trails: Trail[];
+}
+
+export default function Slider({ trails }: Props): JSX.Element {
   const [sliderRef] = useKeenSlider(
     {
       loop: true,
       breakpoints: {
         '(min-width: 400px)': {
-          slides: { perView: 2, spacing: 15 },
+          slides: { perView: 3, spacing: 15 },
         },
         '(min-width: 768px)': {
-          slides: { perView: 3, spacing: 15 },
+          slides: { perView: 4, spacing: 15 },
         },
       },
       slides: {
@@ -55,27 +59,11 @@ export default function Slider(): JSX.Element {
   );
   return (
     <div ref={sliderRef} className="keen-slider">
-      <div className="keen-slider__slide">
-        <Trail src={hero} alt="1" width="100%" height="300px" location="Slovakia" title="Krivan" url="" />
-      </div>
-      <div className="keen-slider__slide">
-        <Trail src={hero} alt="1" width="100%" height="300px" location="Slovakia" title="Krivan" url="" />
-      </div>
-      <div className="keen-slider__slide">
-        <Trail src={hero} alt="1" width="100%" height="300px" location="Slovakia" title="Krivan" url="" />
-      </div>
-      <div className="keen-slider__slide">
-        <Trail src={hero} alt="1" width="100%" height="300px" location="Slovakia" title="Krivan" url="" />
-      </div>
-      <div className="keen-slider__slide">
-        <Trail src={hero} alt="1" width="100%" height="300px" location="Slovakia" title="Krivan" url="" />
-      </div>
-      <div className="keen-slider__slide">
-        <Trail src={hero} alt="1" width="100%" height="300px" location="Slovakia" title="Krivan" url="" />
-      </div>
-      <div className="keen-slider__slide">
-        <Trail src={hero} alt="1" width="100%" height="300px" location="Slovakia" title="Krivan" url="" />
-      </div>
+      {trails.map((trail) => (
+        <div className="keen-slider__slide">
+          <TrailCard width={200} height={200} trail={trail} />
+        </div>
+      ))}
     </div>
   );
 }

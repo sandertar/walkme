@@ -1,2 +1,1 @@
-export { Button } from './components';
-export { Input } from './components';
+export * from './components';
