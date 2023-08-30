@@ -1,8 +1,6 @@
 import { Button } from 'ui';
 
-import Badges from './badges';
-import Hero from './hero';
-import Slider from './slider';
+import { Badges, Hero, Slider } from './components';
 
 import { Section } from '@components';
 import { getTrails } from '@services/trails';

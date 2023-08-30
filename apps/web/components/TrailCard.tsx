@@ -1,9 +1,11 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { BsGeoAlt, BsStarFill } from 'react-icons/bs';
+import { BsGeoAlt } from 'react-icons/bs';
 import { Trail } from 'types';
 
 import ROUTES from '../routes';
+
+import { Rating } from './Rating';
 
 interface Props {
   width: number;
@@ -36,9 +38,7 @@ export function TrailCard({ width, height, trail }: Props): JSX.Element {
               <p>
                 <BsGeoAlt className="inline ui-text-primary" /> {trail.region}
               </p>
-              <div className="inline-flex items-center space-x-2">
-                <BsStarFill /> <span>{trail.rating}</span>
-              </div>
+              <Rating rating={trail.rating} />
             </div>
           </div>
         </div>

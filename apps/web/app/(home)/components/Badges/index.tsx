@@ -1,8 +1,8 @@
 import { BsGeoAlt, BsSignpostSplit, BsPerson } from 'react-icons/bs';
 
-import Badge from './badge';
+import { Badge } from './Badge';
 
-export default function Badges(): JSX.Element {
+export function Badges(): JSX.Element {
   return (
     <div className="flex justify-between align-top grid md:grid-cols-3">
       <Badge

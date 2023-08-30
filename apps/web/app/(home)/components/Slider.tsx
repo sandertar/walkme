@@ -9,7 +9,7 @@ interface Props {
   trails: Trail[];
 }
 
-export default function Slider({ trails }: Props): JSX.Element {
+export function Slider({ trails }: Props): JSX.Element {
   const [sliderRef] = useKeenSlider(
     {
       loop: true,

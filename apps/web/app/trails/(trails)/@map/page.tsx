@@ -1,13 +1,8 @@
-import { Trail } from 'types';
+import { TrailsMap } from './components/TrailsMap';
 
-import Map from './map';
+import { getTrails } from '@services/trails';
 
-async function getData(): Promise<Trail[]> {
-  const trails = await fetch('http://localhost:8080/api/v1/tours').then((res) => res.json());
-  return trails;
-}
-
-export default async function TrailsPage(): Promise<JSX.Element> {
-  const trails = await getData();
-  return <Map points={trails} />;
+export default async function TrailsMapPage(): Promise<JSX.Element> {
+  const trails = await getTrails();
+  return <TrailsMap points={trails} />;
 }

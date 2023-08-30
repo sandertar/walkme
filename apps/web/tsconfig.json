@@ -13,7 +13,9 @@
       "@utils/*": ["./utils/*"],
       "@services": ["./services"],
       "@services/*": ["./services/*"],
-      "@styles/*": ["./styles/*"]
+      "@styles/*": ["./styles/*"],
+      "@layouts": ["./layouts"],
+      "@layouts/*": ["./layouts/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "jest.setup.js"],

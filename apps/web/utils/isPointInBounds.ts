@@ -1,10 +1,7 @@
-import { LatLng, Bounds } from 'types';
+import { LngLat, Bounds } from 'types';
 
-export function isPointInBounds(latLng: LatLng, bounds: Bounds) {
+export function isPointInBounds(lngLat: LngLat, bounds: Bounds) {
   return (
-    latLng[0] < bounds.northEast[0] &&
-    latLng[1] < bounds.northEast[1] &&
-    latLng[0] > bounds.southWest[0] &&
-    latLng[1] > bounds.southWest[1]
+    lngLat[0] < bounds._ne.lng && lngLat[1] < bounds._ne.lat && lngLat[0] > bounds._sw.lng && lngLat[1] > bounds._sw.lat
   );
 }

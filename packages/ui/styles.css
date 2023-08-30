@@ -13,7 +13,7 @@
     @apply text-slate-500;
   }
   .ui-container {
-    @apply container px-5 m-auto;
+    @apply container px-5 mx-auto;
   }
   .ui-border-color {
     @apply border-gray-200;

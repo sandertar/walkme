@@ -22,8 +22,8 @@ export function Header({ isHomePage }: Props): JSX.Element {
   }, []);
   const isAuthenticated = false;
   return (
-    <header className={` w-full py-5 md:h-16 md:py-0 ${isHomePage ? 'bg-transparent' : 'bg-white'}`}>
-      <div className="flex justify-between items-center ui-container">
+    <header className={` w-full py-5 md:h-16 md:py-0 ${isHomePage ? 'bg-transparent' : 'bg-white border-b shadow-md'}`}>
+      <div className="flex justify-between items-center px-5">
         <Link href="/">
           <Logo light={isHomePage} />
         </Link>

@@ -3,7 +3,7 @@ import Image from 'next/image';
 import hero from '@assets/images/hero1.jpeg';
 import { Search } from '@components';
 
-export default function Hero(): JSX.Element {
+export function Hero(): JSX.Element {
   return (
     <div className="relative">
       <Image

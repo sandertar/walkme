@@ -4,7 +4,7 @@ interface Props {
   content: string;
 }
 
-export default function Badge({ icon, title, content }: Props): JSX.Element {
+export function Badge({ icon, title, content }: Props): JSX.Element {
   return (
     <div className="text-center px-10 py-5">
       <div className="flex justify-center text-5xl mb-5 ui-text-primary">{icon}</div>
