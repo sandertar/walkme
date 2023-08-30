@@ -1,11 +1,18 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
-import { Button } from 'ui';
+import { Skeleton } from 'ui';
 
 // More on how to set up stories at: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 const meta = {
-  title: 'Example/Button',
-  component: Button,
+  title: 'Example/Skeleton',
+  decorators: [
+    (Story) => (
+      <div style={{ width: '400px' }}>
+        <Story />
+      </div>
+    ),
+  ],
+  component: Skeleton,
   parameters: {
     // Optional parameter to center the component in the Canvas. More info: https://storybook.js.org/docs/react/configure/story-layout
     layout: 'centered',
@@ -14,54 +21,26 @@ const meta = {
   tags: ['autodocs'],
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
   argTypes: { onClick: { action: 'clicked' } },
-} satisfies Meta<typeof Button>;
+} satisfies Meta<typeof Skeleton>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
 
 // More on writing stories with args: https://storybook.js.org/docs/react/writing-stories/args
-export const Primary: Story = {
+export const Text: Story = {
   args: {
-    variant: Button.variant.PRIMARY,
-    uiSize: Button.size.MEDIUM,
-    children: 'Button',
+    variant: Skeleton.variant.TEXT,
   },
 };
 
-export const Secondary: Story = {
+export const Rectangular: Story = {
   args: {
-    uiSize: Button.size.MEDIUM,
-    variant: Button.variant.SECONDARY,
-    children: 'Button',
+    variant: Skeleton.variant.RECTANGULAR,
   },
 };
 
-export const Error: Story = {
+export const Circular: Story = {
   args: {
-    uiSize: Button.size.MEDIUM,
-    variant: Button.variant.ERROR,
-    children: 'Button',
-  },
-};
-
-export const Success: Story = {
-  args: {
-    uiSize: Button.size.MEDIUM,
-    variant: Button.variant.SUCCESS,
-    children: 'Button',
-  },
-};
-
-export const Medium: Story = {
-  args: {
-    uiSize: Button.size.MEDIUM,
-    children: 'Button',
-  },
-};
-
-export const Small: Story = {
-  args: {
-    uiSize: Button.size.SMALL,
-    children: 'Button',
+    variant: Skeleton.variant.CIRCULAR,
   },
 };

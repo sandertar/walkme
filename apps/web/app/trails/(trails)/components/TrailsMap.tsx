@@ -4,8 +4,8 @@ import { useRouter, useSearchParams } from 'next/navigation';
 import { useCallback, useMemo } from 'react';
 import { Bounds, LngLat, Trail } from 'types';
 
-import appConfig from '../../../../../appconfig';
-import ROUTES from '../../../../../routes';
+import appConfig from '../../../../appconfig';
+import ROUTES from '../../../../routes';
 
 import { Map } from '@components';
 import { getBoundsCenter, searchParamsToBounds } from '@utils';

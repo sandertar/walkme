@@ -1,4 +1,4 @@
-import { TrailsMap } from './components/TrailsMap';
+import { TrailsMap } from '../components/TrailsMap';
 
 import { getTrails } from '@services/trails';
 
