@@ -57,7 +57,7 @@ export class MapLibreGLMap extends Map {
     });
   }
   // add custom method to control markers
-  addMarker(lngLat: LngLat, color: string = '#FF0000', layerId: string = 'points') {
+  addMarker(lngLat: LngLat, color: string = '#ffa726', layerId: string = 'points') {
     const marker = new Marker({ color }).setLngLat(lngLat).addTo(this);
     this.#markers[layerId] = this.#markers[layerId] || [];
     this.#markers[layerId].push(marker);

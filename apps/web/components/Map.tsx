@@ -15,8 +15,8 @@ interface Props {
   center: LngLat;
   bounds?: Bounds;
   geoJSON?: GeoJSONFeatureCollection;
-  onDragEnd?: (bounds: Bounds) => void;
-  onZoomEnd?: (bounds: Bounds) => void;
+  onDragEnd?: (bounds: Bounds, zoom: number) => void;
+  onZoomEnd?: (bounds: Bounds, zoom: number) => void;
   onLoad?: () => void;
 }
 
@@ -59,10 +59,10 @@ export function Map({
       zoom,
     });
     map.current.on('dragend', () => {
-      onDragEnd(map.current.getBounds());
+      onDragEnd(map.current.getBounds(), map.current.getZoom());
     });
     map.current.on('zoomend', () => {
-      onZoomEnd(map.current.getBounds());
+      onZoomEnd(map.current.getBounds(), map.current.getZoom());
     });
     map.current.on('load', () => {
       onLoad();

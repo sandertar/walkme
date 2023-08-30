@@ -14,29 +14,29 @@ interface Props {
   points: Trail[];
 }
 
-function boundsToQuery(bounds: Bounds): string {
-  return `?ne_lat=${bounds._ne.lat}&ne_lng=${bounds._ne.lng}&sw_lat=${bounds._sw.lat}&sw_lng=${bounds._sw.lng}`;
+function boundsToQuery(bounds: Bounds, zoom: number): string {
+  return `?ne_lat=${bounds._ne.lat}&ne_lng=${bounds._ne.lng}&sw_lat=${bounds._sw.lat}&sw_lng=${bounds._sw.lng}&z=${zoom}`;
 }
 
 export function TrailsMap({ points = [] }: Props): JSX.Element {
   const router = useRouter();
   const searchParams = useSearchParams();
-  const bounds: Bounds | null = useMemo(() => searchParamsToBounds(searchParams), [searchParams]);
+  const parsedParams = useMemo(() => searchParamsToBounds(searchParams), [searchParams]);
   const markers = useMemo(
     () => points.map((p) => ({ coordinates: p.location.coordinates as LngLat, slug: p.slug })),
     [points],
   );
   const onMoveEnd = useCallback(
-    (newBounds: Bounds): void => {
-      router.push(`${ROUTES.trails}${boundsToQuery(newBounds)}`);
+    (newBounds: Bounds, zoom: number): void => {
+      router.push(`${ROUTES.trails}${boundsToQuery(newBounds, zoom)}`);
     },
     [router],
   );
   return (
     <Map
       points={markers}
-      center={getBoundsCenter(bounds || appConfig.mapBounds)}
-      zoom={8}
+      center={getBoundsCenter(parsedParams?.bounds || appConfig.mapBounds)}
+      zoom={parsedParams?.zoom || appConfig.mapZoom}
       onDragEnd={onMoveEnd}
       onZoomEnd={onMoveEnd}
     />
