@@ -27,7 +27,7 @@ export function Header({ isHomePage }: Props): JSX.Element {
         <Link href="/">
           <Logo light={isHomePage} />
         </Link>
-        <button className="md:hidden text-2xl text-white" type="button" onClick={toggleMenu}>
+        <button className={`md:hidden text-2xl ${isHomePage ? 'text-white' : ''}`} type="button" onClick={toggleMenu}>
           <BsList />
         </button>
         <nav className={`hidden md:inline-flex whitespace-nowrap ${isHomePage ? 'text-white' : ''}`}>
