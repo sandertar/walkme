@@ -1,7 +1,7 @@
+import { round } from '@turf/helpers';
+import length from '@turf/length';
 import { BsGeoAlt } from 'react-icons/bs';
 import { Trail } from 'types';
-import length from '@turf/length';
-import { round } from '@turf/helpers';
 
 import { Slider } from './components/Slider';
 
