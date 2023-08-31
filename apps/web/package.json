@@ -12,6 +12,8 @@
     "test:ci": "jest --ci"
   },
   "dependencies": {
+    "@turf/helpers": "^6.5.0",
+    "@turf/length": "^6.5.0",
     "keen-slider": "^6.8.6",
     "maplibre-gl": "^3.3.0",
     "next": "^13.4.19",

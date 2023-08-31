@@ -11,7 +11,7 @@ export interface GeoJSONGeometry {
 }
 
 export interface GeoJSONFeature {
-  type: string;
+  type: 'Feature';
   properties: {
     [key: string]: string;
   };

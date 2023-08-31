@@ -1,5 +1,7 @@
 import { BsGeoAlt } from 'react-icons/bs';
 import { Trail } from 'types';
+import length from '@turf/length';
+import { round } from '@turf/helpers';
 
 import { Slider } from './components/Slider';
 
@@ -15,6 +17,16 @@ interface Props {
 
 export default async function TrailPage({ params: { slug } }: Props): Promise<JSX.Element> {
   const trail: Trail = await getTrailDetails({ slug });
+  const feature = trail.trail.features.find((f) => f.geometry.type === 'LineString');
+  const l = feature
+    ? round(
+        length(feature, {
+          units: 'kilometers',
+        }),
+        3,
+      )
+    : null;
+
   return (
     <div>
       <div className="mb-4">
@@ -31,6 +43,7 @@ export default async function TrailPage({ params: { slug } }: Props): Promise<JS
           <BsGeoAlt className="inline ui-text-primary" /> {trail.region}
         </p>
         <p>{trail.description}</p>
+        <p>Distance: {l || 'N/A'}</p>
       </div>
     </div>
   );
